@@ -8,7 +8,7 @@
           <router-link to="/perso" class="nav-link">Ma page </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/wall" class="nav-link">Mur</router-link>
+          <router-link to="/wall" class="nav-link">Fil d'actu</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/profil" class="nav-link">Profil</router-link>

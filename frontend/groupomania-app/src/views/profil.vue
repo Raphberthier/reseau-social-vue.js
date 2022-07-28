@@ -195,6 +195,8 @@ selectFile() {
   },
   
    deleteUser() {
+    window.confirm('Tu veut vraiment nous quitter ?')
+    if (confirm == true ){
               const userId= this.$store.state.userId
                axios.delete("http://localhost:3000/api/users/" + userId, {
                     headers: { Authorization: "Bearer " + this.$store.state.token },
@@ -203,10 +205,10 @@ selectFile() {
                     sessionStorage.clear();
                     this.$router.push("/")
                     .catch((err) => console.log(err));
-                    
-                    
-              
-          },
+                    }
+                    else{
+                      window.alert("c'est cool")
+                    }},
 }
 };
 </script>

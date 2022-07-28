@@ -2,7 +2,7 @@
 
 <div class="container">
     <navBar />
-    <h1>Mur des sujets</h1>
+    <h1>Fil des sujets</h1>
                         
             <div class="card p-3 border-blue mt-3"> 
                 <div id="card">

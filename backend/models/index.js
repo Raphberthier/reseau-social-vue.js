@@ -37,6 +37,11 @@ db.posts.belongsTo(db.users, {
   as: "user",
 });
 
+db.userOnline.belongsTo(db.users, {
+  onDelete: "CASCADE",
+  
+});
+
 db.posts.hasMany(db.comments, {
   onDelete: "CASCADE",
   onUpdate: "CASCADE",
