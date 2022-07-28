@@ -2,27 +2,24 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8 d-flex justify-content-center">
-        <img src="../assets/th.webp" class="w-40 img-fluide" alt="titre" />
+        <img src="../assets/darkroom.webp" class="img-fluide logo" alt="titre" />
       </div>
     </div>
 
     <fieldset>
       <div class="d-flex flex-column justify-content-center">
         <div class="connect">
+          
           <h1 class="card__title" v-if="mode == 'login'">Connexion</h1>
           <h1 class="card__title" v-else>Inscription</h1>
           <br />
         </div>
         <br />
-
-        <p class="card__subtitle" v-if="mode == 'login'">
-          Tu n'as pas encore de compte ?
-          <span class="card__action" @click="switchToCreateAccount()"> <strong>Créer un compte</strong></span>
-        </p>
-        <p class="card__subtitle" v-else>
-          Tu as déjà un compte ?
-          <span class="card__action" @click="switchToLogin()"><strong> Se connecter</strong></span>
-        </p>
+        <div class="switch">
+        <button class="btn btn-secondary justify-content-center" @click="switchToLogin()">Se connecter</button>
+        <button class="btn btn-secondary justify-content-center" @click="switchToCreateAccount()">Créer un compte</button>
+        </div>
+        
         <div class="mgs">{{ message }}</div>
         <div class="mgs">{{ errorMessage }}</div>
       </div>
@@ -201,6 +198,9 @@ h1 {
   margin-top: 10px;
   
 }
+.logo {
+  margin-bottom: 50px;
+}
 .form-floating {
   width: 300px;
 }
@@ -213,6 +213,10 @@ img {
 .connect {
   display: flex;
   justify-content: center;
+}
+.switch {
+  display: flex;
+  justify-content: space-around
 }
 .card__subtitle {
   display: flex;
