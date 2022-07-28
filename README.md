@@ -1,4 +1,4 @@
-<h1>Groupomania</h1>
+<h1>Reseau social </h1>
 <hr/>
 <p>Groupomania Social Network: projet frontend et backend.</p>
 
