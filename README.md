@@ -1,6 +1,6 @@
-<h1>Groupomania</h1>
+<h1>Reseau social </h1>
 <hr/>
-<p>Groupomania Social Network: projet frontend et backend.</p>
+<pDark-room Social Network: projet frontend et backend.</p>
 
 <h2>CONDITIONS PRÉALABLES</h2>
 
